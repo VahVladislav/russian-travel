@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 768px) {
   .last__layer {
-      min-height: 480px;
+      min-height: 240px;
   }
 }
 
