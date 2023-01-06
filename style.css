@@ -1,0 +1,650 @@
+@font-face {
+    src: url(./fonts/inter/Variable/Inter.ttf) format('truetype');
+    font-family: 'inter';
+}
+
+@font-face {
+    src: url(./fonts/inter/Web/Inter-Regular.woff2) format('woff2'),
+         url(./fonts/inter/Web/Inter-Regular.woff) format('woff'),
+         url(./fonts/inter/Hinted-for-Windows/Desktop/Inter-Regular.ttf) format('truetype'),
+         url(./fonts/inter/Desktop/Inter-Regular.otf) format('otf');
+    font-family: 'inter';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(./fonts/inter/Web/Inter-Medium.woff2) format('woff2'),
+         url(./fonts/inter/Web/Inter-Medium.woff) format('woff'),
+         url(./fonts/inter/Hinted-for-Windows/Desktop/Inter-Medium.ttf) format('truetype'),
+         url(./fonts/inter/Desktop/Inter-Medium.otf) format('otf');
+    font-family: 'inter';
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(./fonts/inter/Web/Inter-Black.woff2) format('woff2'),
+         url(./fonts/inter/Web/Inter-Black.woff) format('woff'),
+         url(./fonts/inter/Hinted-for-Windows/Desktop/Inter-Black.ttf) format('truetype'),
+         url(./fonts/inter/Desktop/Inter-Black.otf) format('otf');
+    font-family: 'inter';
+    font-weight: 900;
+}
+
+@font-face {
+    src: url(./fonts/inter/Web/Inter-Bold.woff2) format('woff2'),
+         url(./fonts/inter/Web/Inter-Bold.woff) format('woff'),
+         url(./fonts/inter/Hinted-for-Windows/Desktop/Inter-Bold.ttf) format('truetype'),
+         url(./fonts/inter/Desktop/Inter-Bold.otf) format('otf');
+    font-family: 'inter';
+    font-weight: 700;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.page {
+    width: 100%;
+    background-color: #2A2C2F;
+    color: rgb(255, 255, 255);
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header {
+    max-width: 1280px;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__row {
+    padding: 28px 48px 0;
+    display: grid;
+    grid-template-columns: minmax(min-content, 100vw) min-content min-content;
+    gap: 18px;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .header__row {
+        padding: 28px 24px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__row {
+        padding: 28px 16px 0;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__logo {
+    width: 176px;
+    height: 52px;
+    background-image: url(./images/header-logo.svg);
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .header__link {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__link_active {
+    text-decoration: underline;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__title {
+    max-width: 720px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    text-align: center;
+    margin: 56px auto 32px;
+}
+
+@media screen and (max-width: 760px) {
+    .header__title {
+        font-size: 40px;
+        line-height: 44px;
+        margin: 56px auto 16px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__subtitle {
+    max-width: 640px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 104%;
+    text-align: center;
+    margin: 0 auto 64px;
+}
+
+@media screen and (max-width: 760px) {
+    .header__subtitle {
+        font-size: 16px;
+        line-height: 120%;
+        margin: 0 auto 40px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__cover {
+    max-width: 984px;
+    max-height: 620px;
+    margin: 0 auto 0;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__photo {
+    max-width: 100%;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.header__text {
+    width: 160px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 8px 0 0;
+}
+
+@media screen and (max-width: 984px) {
+    .header__text {
+        margin-left: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__text {
+        margin-left: 16px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+/* ____________________________________________________________________________________________  */
+/* ____________________________________________________________________________________________  */
+
+.description {
+    max-width: 984px;
+    margin: 92px auto 92px;
+}
+
+@media screen and (max-width: 1024px) {
+    .description {
+        margin: 92px 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        margin: 88px 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .description {
+        margin: 64px 16px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.narration__title {
+    max-width: 690px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 107%;
+    margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+    .narration__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.narration__text {
+    margin: 40px 0 33px;
+    max-width: 690px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;   
+}
+
+/* ____________________________________________________________________________________________  */
+
+.narration__links {
+    padding: 0;
+    margin: 0;
+    max-width: 690px;
+    list-style: none;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.narration__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    color: white;
+    text-decoration: none;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.narration__link_font-weight_regular {
+    font-weight: 400;
+}
+
+/* ____________________________________________________________________________________________  */
+/* ____________________________________________________________________________________________  */
+/* ____________________________________________________________________________________________  */
+
+.gallery {
+    max-width: 1184px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+    gap: 16px;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery {
+        margin: 0px 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        margin: 0px 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .gallery {
+        margin: 0px 16px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.gallery__photo {
+    width: 100%;
+}
+
+/* ____________________________________________________________________________________________  */
+/* ____________________________________________________________________________________________  */
+/* ____________________________________________________________________________________________  */
+
+.travel-place {
+    max-width: 984px;
+    margin: 92px auto;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.cards {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    .cards {
+        gap: 50px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.cadrs__item {
+    max-width: 984px;
+    display: grid;
+    grid-template-columns: 460px 484px;
+    grid-template-rows: min-content 460px;
+    gap: 40px;
+}
+
+@media screen and (max-width: 1279px) {
+    .cadrs__item {
+        margin: 0px 24px;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 440px));
+        grid-template-rows: min-content max-content;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .cadrs__item {
+        margin: 0px 24px;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 340px));
+        grid-template-rows: min-content max-content;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cadrs__item {
+        margin: 0px 16px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.cadrs__title {
+    max-width: 460px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 106%;
+    margin: 0;
+    
+}
+
+@media screen and (max-width: 1023px) {
+    .cadrs__title {
+        font-size: 42px;
+        line-height: 46px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cadrs__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.cards__photo { 
+    width: 100%;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.cards__url {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+    letter-spacing: 0.2em;
+    color: #AAAAAA;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.cards__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    transition: .3s linear;
+}
+
+.cards__link:hover {
+    opacity: .6;
+  }
+
+/* ____________________________________________________________________________________________  */
+
+.cards__text {
+    max-width: 484px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    margin: 0;
+}
+
+.cards__text:first-child {
+    margin-bottom: 26px;
+}
+
+@media screen and (max-width: 1023px) {
+    .cards__text {
+        font-size: 16px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.cards__adress {
+    align-self: end;
+}
+
+/* ____________________________________________________________________________________________  */
+/* ____________________________________________________________________________________________  */
+/* ____________________________________________________________________________________________  */
+
+.footer {
+    max-width: 1184px;
+    min-height: 874px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.last {
+    max-width: 100%;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.last__cover-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.last__layer {
+    background-image: url(./images/cover-trains.jpg);
+    object-position: center;
+    background-size: 100%;
+    min-height: 740px;
+    background-repeat: no-repeat;
+    text-align: center;
+    transition: .3s linear;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+    .last__layer {
+        min-height: 640px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .last__layer {
+        min-height: 480px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .last__layer {
+        min-height: 200px;
+    }
+}
+
+.last__layer:hover {
+    background-color: #2A2C2F;;
+    opacity: .8;
+  }
+
+/* ____________________________________________________________________________________________  */
+
+.last__cover-text {
+    margin: auto;
+    display: grid;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.last__title {
+    max-width: 560px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 106%;
+    margin: 0 0 32px;
+    justify-self: center;
+}
+
+@media screen and (max-width: 758px) {
+    .last__title {
+        max-width: 252px;
+        font-size: 32px;
+        line-height: 109%;
+        margin: 0 0 16px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.last__subtitle {
+    max-width: 360px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    justify-self: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 758px) {
+    .last__subtitle {
+        font-size: 14px;
+        line-height: 114%;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.navigator__links {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, max-content) minmax(min-content, 100vw);
+    grid-template-rows: min-content;
+    gap: 18px;
+    margin: 92px auto 24px;
+}
+
+@media screen and (max-width: 1279px) {
+    .navigator__links {
+        margin: 92px 48px 24px;
+
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navigator__links {
+        margin: 88px 24px 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navigator__links {
+        margin: 64px 16px 24px;
+        grid-template-columns: repeat(auto-fit, 320px);
+        gap: 32px;
+    }
+}
+
+/* ____________________________________________________________________________________________  */
+
+.navigator__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.navigator__link:hover {
+    opacity: .6;
+}
+
+/* ____________________________________________________________________________________________  */
+
+.footer__author {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+    .footer__author {
+       text-align: start;
+       margin-top: 16px;
+    }
+}

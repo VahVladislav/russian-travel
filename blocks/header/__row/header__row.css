@@ -1,0 +1,19 @@
+.header__row {
+  padding: 28px 48px 0;
+  display: grid;
+  grid-template-columns: minmax(min-content, 100vw) min-content min-content;
+  gap: 18px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__row {
+      padding: 28px 24px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__row {
+      padding: 28px 16px 0;
+  }
+}

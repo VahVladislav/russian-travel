@@ -1,0 +1,9 @@
+.narration__link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: white;
+  text-decoration: none;
+}
