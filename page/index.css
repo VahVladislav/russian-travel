@@ -16,7 +16,7 @@
 @import url(../blocks/narration/__text/narration__text.css);
 @import url(../blocks/narration/__links/narration__links.css);
 @import url(../blocks/narration/__link/narration__link.css);
-@import url(../blocks/narration//__link/_regular/narration__link_font-weight_regular.css);
+@import url(../blocks/narration//__link/_font-weight/narration__link_font-weight_regular.css);
 @import url(../blocks/gallery/gallery.css);
 @import url(../blocks/gallery/__photo/gallery__photo.css);
 @import url(../blocks/travel-place/travel-place.css);
