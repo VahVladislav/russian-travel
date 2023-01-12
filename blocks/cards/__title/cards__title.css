@@ -1,5 +1,5 @@
 .cards__title {
-  max-width: 460px;
+  max-width: 330px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
@@ -19,5 +19,6 @@
   .cards__title {
       font-size: 32px;
       line-height: 35px;
+      margin: 0 16px;
   }
 }

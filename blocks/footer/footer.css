@@ -1,11 +1,28 @@
 .footer {
   max-width: 1184px;
-  min-height: 42px;
+  max-height: 24px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: max-content minmax(max-content, 100vw);
+  margin: 92px auto 24px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1279px) {
+  .footer {
+      margin: 92px 48px 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+      margin: 88px 24px 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .footer {
       min-height: 300px;
+      margin: 64px 16px 24px;
+      grid-template-columns: repeat(auto-fit, minmax(min-content, 100vw));
   }
 }

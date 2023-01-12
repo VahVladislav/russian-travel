@@ -1,11 +1,11 @@
-/* Начало шапки header */
+
 .header {
-  max-width: 1280px;
+  max-width: 100%;
   padding: 28px 48px 0;
   display: grid;
-  grid-template-columns: minmax(min-content, 100vw) min-content min-content;
-  gap: 18px;
+  grid-template-columns: minmax(min-content, max-content) minmax(min-content, 100%);
   align-items: center;
+  justify-items: end;
 }
 
 @media screen and (max-width: 768px) {
@@ -16,6 +16,6 @@
 
 @media screen and (max-width: 320px) {
   .header {
-      padding: 28px 16px 0;
+      padding: 16px 16px 0;
   }
 }

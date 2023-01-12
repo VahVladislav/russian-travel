@@ -7,15 +7,14 @@
   font-weight: 900;
   font-size: 72px;
   line-height: 106%;
-  margin: 0 0 32px;
+  margin: 0;
+  align-self: end;
   justify-self: center;
 }
 
 @media screen and (max-width: 758px) {
   .cover__title {
-      max-width: 252px;
       font-size: 32px;
       line-height: 109%;
-      margin: 0 0 16px;
   }
 }

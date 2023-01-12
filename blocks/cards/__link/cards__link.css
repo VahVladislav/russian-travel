@@ -10,5 +10,6 @@
 }
 
 .cards__link:hover {
+  cursor: pointer;
   opacity: .6;
 }

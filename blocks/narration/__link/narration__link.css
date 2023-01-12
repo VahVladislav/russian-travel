@@ -7,3 +7,8 @@
   color: white;
   text-decoration: none;
 }
+
+.narration__link:hover {
+  cursor: pointer;
+  opacity: .6;
+}
