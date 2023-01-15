@@ -1,6 +1,5 @@
 .footer {
   max-width: 1184px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: max-content minmax(max-content, 100vw);
   margin: 92px auto 24px;

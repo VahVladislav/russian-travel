@@ -16,8 +16,8 @@
 @import url(../blocks/description/description.css);
 @import url(../blocks/narration/__title/narration__title.css);
 @import url(../blocks/narration/__text/narration__text.css);
-@import url(../blocks/narration/__links/narration__links.css);
-@import url(../blocks/narration/__link/narration__link.css);
+@import url(../blocks/narration/__list/narration__list.css);
+@import url(../blocks/narration/__line/narration__line.css);
 @import url(../blocks/narration/__number/narration__number.css);
 @import url(../blocks/gallery/gallery.css);
 @import url(../blocks/gallery/__photo/gallery__photo.css);
@@ -31,7 +31,6 @@
 @import url(../blocks/cards/__text/cards__text.css);
 @import url(../blocks/cards/__adres/cards__adres.css);
 @import url(../blocks/cover/cover.css);
-
 @import url(../blocks/cover/__link/cover__link.css);
 @import url(../blocks/cover/__title/cover__title.css);
 @import url(../blocks/cover/__subtitle/cover__subtitle.css);
