@@ -1,5 +1,6 @@
 .cover__link {
   color: white;
+  width: 100%;
   min-height: 740px;
   text-decoration: none;
   background-color: rgb(42, 44, 47, .3);
@@ -16,13 +17,13 @@
   opacity: .8;
 }
 
-@media screen and (max-width: 1184px) {
+@media screen and (min-aspect-ratio: 1/1) and (max-width: 1184px) {
   .cover__link {
     min-height: 62.5vmax;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-aspect-ratio: 1/1) and (max-width: 1184px) {
   .cover__link {
     min-height: 62.5vmin;
   }
